@@ -17,7 +17,7 @@ author:
   name:           'Saket Kumar'
   url:            https://www.drupal.org/u/saki007ster
 
-paginate:         5
+paginate:         2
 
 # Custom vars
 version:          2.1.0
