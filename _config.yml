@@ -1,30 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
 # Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
+permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:               Poole
-tagline:             The Jekyll Butler
-url:                 http://getpoole.com
-paginate:            1
-baseurl:             ""
+title:            Saket's Blog
+tagline:          "A Themer's Point of view"
+description:      'My commitment is to perform every requested task with responsibility, honorability and my best effort.'
+url:              http://saki007ster.github.io
+baseurl:          /
 
-# Assets
-#
-# We specify the directory for Jekyll so we can use @imports.
-sass:
-  sass_dir:          _sass
-  style:            :compressed
-
-# About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:           'Saket Kumar'
+  url:            https://www.drupal.org/u/saki007ster
+
+paginate:         5
 
 # Custom vars
-version:             1.0.0
+version:          2.1.0
+
 github:
-  repo:              https://github.com/poole/poole
+  repo:           https://github.com/saki007ster
