@@ -19,7 +19,7 @@ The defining aspect of the flexbox is the ability to alter its items, width and/
 - Flex items inside the flex containers can be layed out in any direction, so this solves our issue with content order in different media queries. It makes the visual content order to be independent of the HTML markup order thereby helping in the responsive theming of sites.
 
 ### Flexbox properties
-![placeholder](../public/images/flex-container.png/800x400 "Flexbox properties")
+![placeholder](http://saki007ster.github.io/public/images/flex-container.png/800x400 "Flexbox properties")
 
 - **main axis, main dimension** - The main axis of a flex container is the primary axis along which flex items are laid out. It extends in the main dimension.
 - **main-start, main-end** - The flex items are placed within the container starting on the main-start side and going toward the main-end side.
