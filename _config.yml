@@ -9,7 +9,7 @@ relative_permalinks: true
 # Setup
 title:            Saket's Blog
 tagline:          "A Themer's Point of view"
-description:      'My commitment is to perform every requested task with responsibility, honorability and my best effort.'
+description:      'Technical, Practical, Theoretically Interesting '
 url:              http://saki007ster.github.io
 baseurl:          /
 
