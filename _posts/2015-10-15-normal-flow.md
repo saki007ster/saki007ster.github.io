@@ -66,7 +66,7 @@ While the value of offsetParent can be null, the return value from jQuery’s of
 If the element is not a descendant of a positioned element and it does not meet any of the null criteria, then its offsetParent will be the 'body'.
 
 ######offsetParent is an ancestor element other than body tag
-If the element is a descendant of a positioned element, then the closest positioned ancestor will be its offsetParent. If an element is not a descendant of a positioned element but is a descendant of <td>, <th>, or <table>, then its offsetParent will be the closest of the aforementioned tags.
+If the element is a descendant of a positioned element, then the closest positioned ancestor will be its offsetParent. If an element is not a descendant of a positioned element but is a descendant of \<td\>, \<th\>, or \<table\>, then its offsetParent will be the closest of the aforementioned tags.
 
 ## Positioning
 Positioning is frequently misunderstood. Often developers will set a different position value on an element in an attempt to fix a layout when things are not looking quite right. While this approach can “fix” a layout, it does not promote an understanding of how positioning actually works. Having a firm grasp of positioning can save you a great deal of time in the long run, because once you understand how it
@@ -90,7 +90,7 @@ An element is also taken out of the normal flow of the document when its positio
 This is useful for creating sticky headers and footers, and modal overlays. Here’s an example:
 {% highlight html %}
 /*
-Covers the viewport when applied to an element that is a child of the <body>. It stretches the element across the <body> by fixing its position and setting all the position properties to 0. This makes it impossible to interact with any elements that are in lower rendering layers.
+Covers the viewport when applied to an element that is a child of the \<body\>. It stretches the element across the \<body\> by fixing its position and setting all the position properties to 0. This makes it impossible to interact with any elements that are in lower rendering layers.
 */
 
 .modal-overlay {
@@ -150,7 +150,7 @@ var rect = $input[0].getBoundingClientRect();
 {% endhighlight %}
 
 #### Relative to the Document
-Getting an element’s position relative to the document is useful for absolutely positioning an element so that it remains positioned as the page scrolls, and for positioning elements relative to each other within the document. It is a fairly straightforward process. You traverse the DOM, finding each offsetParent, and get its offsetLeft and offsetTop. These values are the offset from the next offsetParent, so you have to sum the values until you reach the <body>:
+Getting an element’s position relative to the document is useful for absolutely positioning an element so that it remains positioned as the page scrolls, and for positioning elements relative to each other within the document. It is a fairly straightforward process. You traverse the DOM, finding each offsetParent, and get its offsetLeft and offsetTop. These values are the offset from the next offsetParent, so you have to sum the values until you reach the \<body\>:
 
 {% highlight js%}
 function getElOffsets(el) {
