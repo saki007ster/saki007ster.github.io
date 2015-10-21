@@ -31,10 +31,10 @@ In the normal flow, an element’s default position value is **static**. A stati
 When an element is **positioned**, it is considered to be a **containing element**. A containing element is a **reference point** for **positioning child elements** using the top, right, bottom, and/or left properties. This containing element then becomes the **offsetParent** for its child elements and any ancestors of the children that are not descendants of closer-positioned ancestors.
 
 ##### How the browser determines an element’s offsetParent ?
-An element’s offsetParent property can be either null, the <body>, or an ancestor element other than the <body>. The browser uses the W3C specification to determine an element’s offsetParent value, as follows:
+An element’s offsetParent property can be either null, the \<body\>, or an ancestor element other than the \<body\>. The browser uses the W3C specification to determine an element’s offsetParent value, as follows:
 
 ######offsetParent is null
-Occasionally, an element’s offsetParent value will be null. This occurs when the element is the <body>, when the element does not have a layout box (i.e., its display is none) and when the element has not been appended to the DOM. The offsetParent will also be null if the element’s position is fixed because it is
+Occasionally, an element’s offsetParent value will be null. This occurs when the element is the \<body\>, when the element does not have a layout box (i.e., its display is none) and when the element has not been appended to the DOM. The offsetParent will also be null if the element’s position is fixed because it is
 positioned relative to the viewport, not another element. The following example illustrates these cases:
 
 {% highlight html %}
@@ -60,7 +60,7 @@ console.log($div2.offsetParent()[0]); // logs <html>
 console.log($div2[0].offsetParent); // logs null
 {% endhighlight %}
 
-While the value of offsetParent can be null, the return value from jQuery’s offsetParent method is never null. jQuery returns <html> as the offsetParent, ensuring that there is always an element against which to operate.
+While the value of offsetParent can be null, the return value from jQuery’s offsetParent method is never null. jQuery returns \<html\> as the offsetParent, ensuring that there is always an element against which to operate.
 
 ######offsetParent is body tag
 If the element is not a descendant of a positioned element and it does not meet any of the null criteria, then its offsetParent will be the 'body'.
@@ -90,7 +90,7 @@ An element is also taken out of the normal flow of the document when its positio
 This is useful for creating sticky headers and footers, and modal overlays. Here’s an example:
 {% highlight html %}
 /*
-Covers the viewport when applied to an element that is a child of the \<body\>. It stretches the element across the \<body\> by fixing its position and setting all the position properties to 0. This makes it impossible to interact with any elements that are in lower rendering layers.
+Covers the viewport when applied to an element that is a child of the <body>. It stretches the element across the <body> by fixing its position and setting all the position properties to 0. This makes it impossible to interact with any elements that are in lower rendering layers.
 */
 
 .modal-overlay {
