@@ -4,7 +4,6 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
 title:            Saket's Blog
@@ -24,3 +23,5 @@ version:          2.1.0
 
 github:
   repo:           https://github.com/saki007ster
+
+gems:             [jekyll-paginate]
